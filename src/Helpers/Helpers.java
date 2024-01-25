@@ -34,7 +34,7 @@ public class Helpers {
         boolean a= Stream.of(name.trim()).filter(str->!str.isEmpty() && str.length() >= 2 && str.length() <= 20
                 && !str.matches(".*\\d.*") && !str.matches(".*[\\p{Punct}].*")).findFirst().isEmpty();
         if(a){
-            System.out.println("You cannot use punctuations,numbers and length must be 2-20");
+            System.out.println("incorrect name");
         }
         return a;
     }
@@ -108,19 +108,19 @@ public class Helpers {
         String count = null;
         for (int i = 1; i <= number; i++) {
             while (a) {
-                System.out.println("Please, enter book name length between 5-20");
+                System.out.println("Please, enter book name");
                 name = scanner.nextLine();
                 a = Helpers.checkString(name);
             }
             a=true;
             while (a) {
-                System.out.println("Please, enter book author length between 5-20");
+                System.out.println("Please, enter book author");
                 author = scanner.nextLine();
                 a = Helpers.checkString(author);
             }
             a=true;
             while (a) {
-                System.out.println("Please, enter book language length between 5-20");
+                System.out.println("Please, enter book language");
                 language = scanner.nextLine();
                 a = Helpers.checkString(language);
             }
