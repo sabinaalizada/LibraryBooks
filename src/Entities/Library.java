@@ -30,12 +30,7 @@ public class Library {
 //    }
 
     public void addBook(Book book){
-        boolean existBook=books.stream().filter(existsBook->existsBook.name.equals(book.name) &&
-                existsBook.author.equals(book.author) && existsBook.language.equals(book.language)).
-                peek(existsBook->existsBook.count+="+"+book.count).findFirst().isEmpty();
-        if(existBook){
-            books.add(book);
-        }
+        books.add(book);
     }
 
 //    public void ShowBooks(){
