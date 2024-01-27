@@ -33,7 +33,7 @@ public class Main {
                     boolean returnToManu=false;
                     System.out.println("What do you want to do?");
                     System.out.println("------------------------------------------------------");
-                    System.out.println("1.Add book 2.Remove Book 3.Increase Count  4.Decrease Count 5.Increase Price 6.Decrease Price 7.Search Book 8.Show all books 9.Update Book 10.Delete all books 11.Quit");
+                    System.out.println(""1.Add book\n2.Remove Book\n3.Increase Count\n4.Decrease Count\n5.Increase Price\n6.Decrease Price\n7.Search Book\n8.Show all books\n9.Update Book\n10.Delete all books\n11.Quit");
                     String choise=scanner.nextLine();
                     int result= tryParseInt(choise);
                     switch (result){
