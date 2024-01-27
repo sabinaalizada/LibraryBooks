@@ -18,7 +18,7 @@ public class Main {
                 Scanner scanner=new Scanner(System.in);
                 String libraryname = null;
                 while (a){
-                    System.out.println("Please, enter library name length between 3-20");
+                    System.out.println("Please, enter library name");
                     Scanner scan=new Scanner(System.in);
                     libraryname= scan.nextLine();
                     a=Helpers.checkString(libraryname);
@@ -38,7 +38,7 @@ public class Main {
                     int result= tryParseInt(choise);
                     switch (result){
                         case 1:
-                            System.out.println("How many books or book you want to add");
+                            System.out.println("How many books you want to add");
                             int numBooks=tryParseInt(scanner.nextLine());
                             Helpers.library=  Helpers.createBook(numBooks);
                             break;
