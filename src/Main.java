@@ -214,7 +214,7 @@ public class Main {
                             }
                             break;
                         case 11:
-                            System.out.println("Byeeeeeee");
+                            System.out.println("The end");
                             return;
                         default:
                             break;
